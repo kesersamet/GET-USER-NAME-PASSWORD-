@@ -22,15 +22,15 @@ typedef struct{
 
 int main(){
 
-    user_info user_info; 
+user_info user_info; 
 
-    inputUser_Name(user_info.user_name);
+inputUser_Name(user_info.user_name);
 
-    compare_name(user_info.user_name, name_data);
+compare_name(user_info.user_name, name_data);
 
-    inputPassword(user_info.password);
+inputPassword(user_info.password);
 
-    compare_password(user_info.password, password_data);
+ compare_password(user_info.password, password_data);
 
 
 
@@ -38,18 +38,18 @@ int main(){
 
 void inputUser_Name(char arr1[]){
 
-    printf("Please enter your name:\n");
+ printf("Please enter your name:\n");
 
-    scanf("%20s", arr1);
+ scanf("%20s", arr1);
 
 
 
 }
 void inputPassword(char arr2[]){
 
-    printf("Please enter your password:\n");
+ printf("Please enter your password:\n");
 
-    scanf("%20s", arr2);
+ scanf("%20s", arr2);
 
 
 }
@@ -86,34 +86,28 @@ return temp;
 
 
 int compare_password(char arr4[], char arr5[]){
-
-
-
-    while(1){
-        
-    temp = strcmp(arr4, arr5);
-        
-    if(temp == 0){
     
-    printf("Correct Password\n");
+ while(1){
+
+temp = strcmp(arr4, arr5);
         
-    break;
+ if(temp == 0){
+    
+ printf("Correct Password\n");
+            break;
     
     }
-    else{
+ else{
     
-    printf("Wrong Password\n");
+ printf("Wrong Password\n");
     
-    printf("Please enter your password again:\n");
+ printf("Please enter your password again:\n");
     
-    scanf("%20s", arr4);
+  scanf("%20s", arr4);
       
-    continue;
-    }
-    
-    
-    
-    }
-    
+   continue;
+  }
+
+ }
     return temp;
 }
